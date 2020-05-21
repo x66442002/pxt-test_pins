@@ -5,7 +5,7 @@
  * block = " "之後的內容是在定義積木的完整樣貌
  */
  
-//% block="test_pins" color="#AA278D" 
+//% block="test_pins" color="#AA278A" 
 //block積木群組名稱,color積木顏色
 namespace test_pins {
 
