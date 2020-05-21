@@ -23,38 +23,4 @@ namespace test_pins {
     export function digital_writepin(tname: DigitalPin, tvalue: number): void {
         pins.digitalWritePin(tname, tvalue)
     }
-
-    //% weight=20
-    //% blockId=digital_readpin
-    //% block="digital read pin|%tname"
-    //% tname.fieldEditor="gridpicker"
-    //% tname.fieldOptions.columns=3
-    //% inlineInputMode=inline
-    export function digital_readpin(tname: DigitalPin): number {
-        return pins.digitalReadPin(tname);
-    }
-
-    //% weight=20
-    //% blockId=analog_writepin 
-    //% block="analog write pin |%tname| to |%tvalue"
-    //% tname.fieldEditor="gridpicker" 
-    //% tname.fieldOptions.columns=3 
-    //% tvalue.defl=1023
-    //% tvalue.min=0
-    //% tvalue.max=1023
-    export function analog_writepin(tname: AnalogPin, tvalue: number): void {
-        pins.analogWritePin(tname, tvalue)
-    }
-	
-    //% weight=20
-    //% blockId=analog_readpin
-    //% block="analog read pin|%tname"
-    //% tname.fieldEditor="gridpicker"
-    //% tname.fieldOptions.columns=3
-    //% inlineInputMode=inline
-    export function analog_readpin(tname: AnalogPin): number {
-        return pins.analogReadPin(tname);
-    }	
-	
-
 }
