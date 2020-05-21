@@ -22,7 +22,6 @@ namespace test_pins {
     //% tvalue.max=1	
     export function digital_writepin(tname: DigitalPin, tvalue: number): void {
         pins.digitalWritePin(tname, tvalue)
-    }
-
+}
 
 }
