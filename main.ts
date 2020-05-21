@@ -5,7 +5,7 @@
  * block = " "之後的內容是在定義積木的完整樣貌
  */
  
-//% block="test_pins" color="#AA278A" 
+//% block="test_pins" color="#A0278A" 
 //block積木群組名稱,color積木顏色
 namespace test_pins {
 
@@ -23,4 +23,18 @@ namespace test_pins {
     export function digital_writepin(tname: DigitalPin, tvalue: number): void {
         pins.digitalWritePin(tname, tvalue)
     }
+ 
+    //% weight=20
+    //% blockId=analog_WritePin
+    //% block="analog write pin |%tname| to |%tvalue"
+    //% tname.fieldEditor="gridpicker" 
+    //% tname.fieldOptions.columns=3 
+    //% tvalue.defl=0
+    //% tvalue.min=0
+    //% tvalue.max=1	
+    export function analog_writepin(tname:AnalogPin, tvalue: number): void {
+        pins.analogWritePin(tname, tvalue)
+    }
+ 
+ 
 }
