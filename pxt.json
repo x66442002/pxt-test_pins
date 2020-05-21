@@ -1,7 +1,7 @@
 {
     "name": "test_pins", 
     "version": "0.0.1", 
-    "description": "Copyright belongs to kodorobot", 
+    "description": "0521.....TEST", 
     "license": "MIT", 
     "dependencies": { 
         "core": "*"
